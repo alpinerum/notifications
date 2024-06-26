@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Notifications
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,4 +17,7 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+  <ion-button expand="block" (click)="getAftertenseconds()">Receive Notification in 10 seconds</ion-button>
+  <ion-button expand="block" (click)="getRecurring()"> Recurring per 50 sec</ion-button>
+  <ion-button expand="block" (click)="getDaily()">Daily</ion-button>
 </ion-content>
